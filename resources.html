@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources - MindfulConnect</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="page-container">
+    <header class="main-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-brain"></i>
+          <span>MindfulConnect</span>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html" class="active">Resources</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <a href="dashboard-patient.html" class="btn btn-outline">Dashboard</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dashboard-patient.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <section class="resources-hero-section">
+        <div class="container">
+          <div class="section-header">
+            <h1>Free Mental Health Resources</h1>
+            <p>Access helpful tools and content to support your mental wellbeing journey.</p>
+            <div class="search-container">
+              <i class="fas fa-search"></i>
+              <input type="search" placeholder="Search resources...">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resources-content-section">
+        <div class="container">
+          <div class="resources-tabs">
+            <div class="tab-buttons">
+              <button class="tab-btn active" data-tab="guides">Self-Help Guides</button>
+              <button class="tab-btn" data-tab="videos">Video Lectures</button>
+              <button class="tab-btn" data-tab="assessment">Self-Assessment Tools</button>
+            </div>
+
+            <div class="tab-content active" id="guides-tab">
+              <div class="resources-grid">
+                <div class="resource-card">
+                  <div class="resource-image">
+                    <img src="https://placehold.co/400x250" alt="Anxiety Management Guide">
+                  </div>
+                  <div class="resource-content">
+                    <div class="resource-tag">
+                      <i class="fas fa-book"></i>
+                      <span>Guide</span>
+                    </div>
+                    <h3>Understanding and Managing Anxiety</h3>
+                    <p>Learn about the different types of anxiety and effective strategies to manage symptoms in daily life.</p>
+                    <a href="#" class="btn btn-outline btn-sm">Read Guide</a>
+                  </div>
+                </div>
+
+                <div class="resource-card">
+                  <div class="resource-image">
+                    <img src="https://placehold.co/400x250" alt="Depression Guide">
+                  </div>
+                  <div class="resource-content">
+                    <div class="resource-tag">
+                      <i class="fas fa-book"></i>
+                      <span>Guide</span>
+                    </div>
+                    <h3>Depression: A Path to Recovery</h3>
+                    <p>A comprehensive guide to understanding depression, its symptoms, and evidence-based approaches to recovery.</p>
+                    <a href="#" class="btn btn-outline btn-sm">Read Guide</a>
+                  </div>
+                </div>
+
+                <div class="resource-card">
+                  <div class="resource-image">
+                    <img src="https://placehold.co/400x250" alt="Stress Management Guide">
+                  </div>
+                  <div class="resource-content">
+                    <div class="resource-tag">
+                      <i class="fas fa-book"></i>
+                      <span>Guide</span>
+                    </div>
+                    <h3>Stress Management Techniques</h3>
+                    <p>Practical strategies for managing stress, including breathing exercises, mindfulness, and lifestyle changes.</p>
+                    <a href="#" class="btn btn-outline btn-sm">Read Guide</a>
+                  </div>
+                </div>
+
+                <div class="resource-card">
+                  <div class="resource-image">
+                    <img src="https://placehold.co/400x250" alt="Sleep Guide">
+                  </div>
+                  <div class="resource-content">
+                    <div class="resource-tag">
+                      <i class="fas fa-book"></i>
+                      <span>Guide</span>
+                    </div>
+                    <h3>Improving Sleep Quality</h3>
+                    <p>Understanding the connection between sleep and mental health, with practical tips for better sleep hygiene.</p>
+                    <a href="#" class="btn btn-outline btn-sm">Read Guide</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="videos-tab">
+              <div class="resources-grid">
+                <div class="resource-card">
+                  <div class="resource-video">
+                    <img src="https://placehold.co/400x250" alt="Mindfulness Video">
+                    <div class="play-button">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div class="resource-content">
+                    <div class="resource-tag">
+                      <i class="fas fa-video"></i>
+                      <span>Video</span>
+                    </div>
+                    <h3>Introduction to Mindfulness Meditation</h3>
+                    <p>Dr. Lisa Wong guides you through the basics of mindfulness meditation and its benefits for mental health.</p>
+                    <p class="video-duration"><i class="fas fa-clock"></i> 15 minutes</p>
+                    <a href="#" class="btn btn-outline btn-sm">Watch Video</a>
+                  </div>
+                </div>
+
+                <div class="resource-card">
+                  <div class="resource-video">
+                    <img src="https://placehold.co/400x250" alt="CBT Video">
+                    <div class="play-button">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div class="resource-content">
+                    <div class="resource-tag">
+                      <i class="fas fa-video"></i>
+                      <span>Video</span>
+                    </div>
+                    <h3>Cognitive Behavioral Therapy Explained</h3>
+                    <p>Dr. Robert Miller explains the principles of CBT and how it can help change negative thought patterns.</p>
+                    <p class="video-duration"><i class="fas fa-clock"></i> 20 minutes</p>
+                    <a href="#" class="btn btn-outline btn-sm">Watch Video</a>
+                  </div>
+                </div>
+
+                <div class="resource-card">
+                  <div class="resource-video">
+                    <img src="https://placehold.co/400x250" alt="Anxiety Video">
+                    <div class="play-button">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div class="resource-content">
+                    <div class="resource-tag">
+                      <i class="fas fa-video"></i>
+                      <span>Video</span>
+                    </div>
+                    <h3>Understanding Panic Attacks</h3>
+                    <p>Learn about the physiological and psychological aspects of panic attacks and how to manage them.</p>
+                    <p class="video-duration"><i class="fas fa-clock"></i> 18 minutes</p>
+                    <a href="#" class="btn btn-outline btn-sm">Watch Video</a>
+                  </div>
+                </div>
+
+                <div class="resource-card">
+                  <div class="resource-video">
+                    <img src="https://placehold.co/400x250" alt="Relationships Video">
+                    <div class="play-button">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div class="resource-content">
+                    <div class="resource-tag">
+                      <i class="fas fa-video"></i>
+                      <span>Video</span>
+                    </div>
+                    <h3>Building Healthy Relationships</h3>
+                    <p>Dr. Emily Rodriguez discusses communication strategies and boundary-setting in relationships.</p>
+                    <p class="video-duration"><i class="fas fa-clock"></i> 25 minutes</p>
+                    <a href="#" class="btn btn-outline btn-sm">Watch Video</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="assessment-tab">
+              <div class="assessment-intro">
+                <h2>Mental Health Self-Assessment Tools</h2>
+                <p>These tools can help you gain insights into your mental wellbeing. They are not diagnostic tools but can help you understand when to seek professional support.</p>
+              </div>
+              <div class="assessment-grid">
+                <div class="assessment-card">
+                  <div class="assessment-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <div class="assessment-content">
+                    <h3>Anxiety Assessment</h3>
+                    <p>A brief questionnaire to help you understand your anxiety levels and potential triggers.</p>
+                    <p class="assessment-meta"><i class="fas fa-clock"></i> 5 minutes to complete</p>
+                    <a href="#" class="btn btn-primary btn-block">Start Assessment</a>
+                  </div>
+                </div>
+
+                <div class="assessment-card">
+                  <div class="assessment-icon">
+                    <i class="fas fa-cloud-rain"></i>
+                  </div>
+                  <div class="assessment-content">
+                    <h3>Depression Screening</h3>
+                    <p>Evaluate symptoms of depression and understand when professional help might be beneficial.</p>
+                    <p class="assessment-meta"><i class="fas fa-clock"></i> 7 minutes to complete</p>
+                    <a href="#" class="btn btn-primary btn-block">Start Assessment</a>
+                  </div>
+                </div>
+
+                <div class="assessment-card">
+                  <div class="assessment-icon">
+                    <i class="fas fa-bolt"></i>
+                  </div>
+                  <div class="assessment-content">
+                    <h3>Stress Level Check</h3>
+                    <p>Measure your current stress levels and identify areas of life contributing to stress.</p>
+                    <p class="assessment-meta"><i class="fas fa-clock"></i> 4 minutes to complete</p>
+                    <a href="#" class="btn btn-primary btn-block">Start Assessment</a>
+                  </div>
+                </div>
+
+                <div class="assessment-card">
+                  <div class="assessment-icon">
+                    <i class="fas fa-moon"></i>
+                  </div>
+                  <div class="assessment-content">
+                    <h3>Sleep Quality Assessment</h3>
+                    <p>Evaluate your sleep patterns and learn how they might be affecting your mental health.</p>
+                    <p class="assessment-meta"><i class="fas fa-clock"></i> 6 minutes to complete</p>
+                    <a href="#" class="btn btn-primary btn-block">Start Assessment</a>
+                  </div>
+                </div>
+              </div>
+              <div class="assessment-disclaimer">
+                <p><strong>Disclaimer:</strong> These self-assessment tools are for informational purposes only and are not a substitute for professional medical advice, diagnosis, or treatment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resources-cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Need Personalized Support?</h2>
+            <p>Connect with a verified psychologist who can provide guidance tailored to your specific needs.</p>
+            <a href="signup.html?role=patient" class="btn btn-secondary">Find a Psychologist</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-top">
+          <a href="index.html" class="logo">
+            <i class="fas fa-brain"></i>
+            <span>MindfulConnect</span>
+          </a>
+          <nav class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="currentYear"></span> MindfulConnect. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+  <script src="resources.js"></script>
+</body>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo i {
+  margin-right: 10px;
+}
+
+.auth-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-form .form-group {
+  margin-bottom: 15px;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+.radio-option input {
+  margin-right: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.auth-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.auth-links a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.auth-footer {
+  background-color: #f4f4f4;
+  padding: 10px 0;
+}
+
+.auth-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.back-link i {
+  margin-right: 5px;
+}
+</style>
+</html>

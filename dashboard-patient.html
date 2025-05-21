@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard - MindfulConnect</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Mobile Navigation Toggle -->
+    <button class="mobile-sidebar-toggle" id="sidebarToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="logo">
+          <i class="fas fa-brain"></i>
+          <span>MindfulConnect</span>
+        </a>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="dashboard-patient.html" class="active">
+          <i class="fas fa-home"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="patient-appointments.html">
+          <i class="fas fa-calendar"></i>
+          <span>Appointments</span>
+        </a>
+        <a href="patient-messages.html">
+          <i class="fas fa-comment"></i>
+          <span>Messages</span>
+        </a>
+        <a href="patient-community.html">
+          <i class="fas fa-users"></i>
+          <span>Community</span>
+        </a>
+        <a href="patient-settings.html">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-info">
+          <img src="https://placehold.co/40x40" alt="User" class="user-avatar">
+          <div class="user-details">
+            <p class="user-name">John Doe</p>
+            <p class="user-email">john.doe@example.com</p>
+          </div>
+          <a href="index.html" class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+        <h1>Dashboard</h1>
+        <div class="header-actions">
+          <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="search" placeholder="Search...">
+          </div>
+          <button class="notification-btn">
+            <i class="fas fa-bell"></i>
+          </button>
+        </div>
+      </header>
+
+      <div class="dashboard-content">
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>Upcoming Sessions</h3>
+            <p class="stat-value">2</p>
+          </div>
+          <div class="stat-card">
+            <h3>Completed Sessions</h3>
+            <p class="stat-value">12</p>
+          </div>
+          <div class="stat-card">
+            <h3>Unread Messages</h3>
+            <p class="stat-value">3</p>
+          </div>
+        </div>
+
+        <!-- Sessions Section -->
+        <div class="dashboard-section">
+          <div class="section-header">
+            <div class="tabs">
+              <button class="tab-btn active" data-tab="upcoming">Upcoming Sessions</button>
+              <button class="tab-btn" data-tab="recommended">Recommended</button>
+            </div>
+            <a href="patient-book.html" class="btn btn-primary">Book New Session</a>
+          </div>
+
+          <div class="tab-content active" id="upcoming-tab">
+            <div class="session-card">
+              <div class="session-header">
+                <div>
+                  <h3>Session with Dr. Sarah Johnson</h3>
+                  <p class="session-meta">
+                    <i class="fas fa-calendar"></i> Tomorrow, 10:00 AM
+                    <i class="fas fa-clock"></i> 60 minutes
+                  </p>
+                </div>
+              </div>
+              <div class="session-body">
+                <p>Video consultation for anxiety management strategies.</p>
+              </div>
+              <div class="session-footer">
+                <button class="btn btn-outline">Reschedule</button>
+                <button class="btn btn-primary">Join Session</button>
+              </div>
+            </div>
+
+            <div class="session-card">
+              <div class="session-header">
+                <div>
+                  <h3>Session with Dr. Michael Chen</h3>
+                  <p class="session-meta">
+                    <i class="fas fa-calendar"></i> Friday, 2:00 PM
+                    <i class="fas fa-clock"></i> 45 minutes
+                  </p>
+                </div>
+              </div>
+              <div class="session-body">
+                <p>Chat session for follow-up on stress management techniques.</p>
+              </div>
+              <div class="session-footer">
+                <button class="btn btn-outline">Reschedule</button>
+                <button class="btn btn-primary">Join Session</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="recommended-tab">
+            <div class="practitioner-card">
+              <div class="practitioner-header">
+                <h3>Dr. Emily Rodriguez</h3>
+                <p>Specializes in depression and anxiety disorders</p>
+              </div>
+              <div class="practitioner-body">
+                <div class="practitioner-info">
+                  <img src="https://placehold.co/60x60" alt="Dr. Emily Rodriguez" class="practitioner-avatar">
+                  <div>
+                    <p>15+ years of experience in cognitive behavioral therapy</p>
+                    <div class="rating">
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <span>4.9 (120 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="practitioner-footer">
+                <button class="btn btn-primary btn-block">Book Consultation</button>
+              </div>
+            </div>
+
+            <div class="practitioner-card">
+              <div class="practitioner-header">
+                <h3>Dr. James Wilson</h3>
+                <p>Specializes in relationship counseling</p>
+              </div>
+              <div class="practitioner-body">
+                <div class="practitioner-info">
+                  <img src="https://placehold.co/60x60" alt="Dr. James Wilson" class="practitioner-avatar">
+                  <div>
+                    <p>Expert in family therapy and interpersonal relationships</p>
+                    <div class="rating">
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <span>4.2 (85 reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="practitioner-footer">
+                <button class="btn btn-primary btn-block">Book Consultation</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Community Section -->
+        <div class="dashboard-section">
+          <div class="section-header">
+            <h2>Community Activity</h2>
+            <a href="patient-community.html" class="btn btn-outline">View All</a>
+          </div>
+          <div class="community-grid">
+            <div class="community-card">
+              <div class="community-header">
+                <h3>Anxiety Support Group</h3>
+                <p>Latest discussions</p>
+              </div>
+              <div class="community-body">
+                <div class="discussion-item">
+                  <h4>Coping with work-related anxiety</h4>
+                  <p>Started by Jane D. • 12 replies • 2 hours ago</p>
+                </div>
+                <div class="discussion-item">
+                  <h4>Breathing techniques that helped me</h4>
+                  <p>Started by Mark T. • 8 replies • 1 day ago</p>
+                </div>
+              </div>
+              <div class="community-footer">
+                <button class="btn btn-outline btn-block">Join Group</button>
+              </div>
+            </div>
+
+            <div class="community-card">
+              <div class="community-header">
+                <h3>Upcoming Community Events</h3>
+                <p>Join these virtual events</p>
+              </div>
+              <div class="community-body">
+                <div class="event-item">
+                  <h4>Mindfulness Meditation Workshop</h4>
+                  <p>Saturday, 11:00 AM • Hosted by Dr. Lisa Wong</p>
+                </div>
+                <div class="event-item">
+                  <h4>Stress Management Q&A Session</h4>
+                  <p>Monday, 7:00 PM • Hosted by Dr. Robert Miller</p>
+                </div>
+              </div>
+              <div class="community-footer">
+                <button class="btn btn-outline btn-block">View Calendar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="scripts.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  display: flex;
+}
+
+.mobile-sidebar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #4CAF50;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav {
+  flex: 1;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar-nav a.active {
+  background-color: #388E3C;
+  border-radius: 4px;
+}
+
+.sidebar-nav a i {
+  margin-right: 10px;
+}
+
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-details {
+  flex: 1;
+}
+
+.logout-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.dashboard-main {
+  flex: 1;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-container i {
+  margin-right: 5px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+}
+
+.notification-btn {
+  background: none;
+  border: none;
+  color: #4CAF50;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-card h3 {
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dashboard-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tab-btn.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.session-card,
+.practitioner-card,
+.community-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.session-header,
+.practitioner-header,
+.community-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.session-meta,
+.practitioner-info,
+.community-body {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.patient-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.patient-avatar,
+.patient-avatar-sm,
+.practitioner-avatar {
+  border-radius: 50%;
+}
+
+.patient-avatar-sm,
+.practitioner-avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.session-footer,
+.practitioner-footer,
+.community-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.patients-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.patients-table th,
+.patients-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.patients-table th {
+  background-color: #f4f4f4;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+}
+
+.status-active {
+  background-color: #4CAF50;
+}
+
+.status-inactive {
+  background-color: #f44336;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.btn-text {
+  background: none;
+  border: none;
+  color: #4CAF50;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .dashboard-main {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .mobile-sidebar-toggle {
+    display: block;
+  }
+}
+</style>
+</html>

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community - MindfulConnect</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="page-container">
+    <header class="main-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-brain"></i>
+          <span>MindfulConnect</span>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="community.html" class="active">Community</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <a href="dashboard-patient.html" class="btn btn-outline">Dashboard</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="community.html" class="active">Community</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dashboard-patient.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <section class="community-hero-section">
+        <div class="container">
+          <div class="section-header">
+            <h1>Join Our Supportive Community</h1>
+            <p>Connect with others facing similar challenges. Share experiences, offer support, and know you're not alone.</p>
+            <div class="search-container">
+              <i class="fas fa-search"></i>
+              <input type="search" placeholder="Search groups and discussions...">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="community-content-section">
+        <div class="container">
+          <div class="community-tabs">
+            <div class="tab-buttons">
+              <button class="tab-btn active" data-tab="groups">Support Groups</button>
+              <button class="tab-btn" data-tab="discussions">Popular Discussions</button>
+            </div>
+
+            <div class="tab-content active" id="groups-tab">
+              <div class="groups-grid">
+                <div class="group-card">
+                  <div class="group-header">
+                    <h3>Anxiety Support</h3>
+                    <p class="group-meta">
+                      <i class="fas fa-users"></i>
+                      <span>1,245 members</span>
+                    </p>
+                  </div>
+                  <div class="group-body">
+                    <p>A safe space to discuss anxiety, share coping strategies, and support each other through challenges.</p>
+                  </div>
+                  <div class="group-footer">
+                    <button class="btn btn-primary btn-block">Join Group</button>
+                  </div>
+                </div>
+
+                <div class="group-card">
+                  <div class="group-header">
+                    <h3>Depression Recovery</h3>
+                    <p class="group-meta">
+                      <i class="fas fa-users"></i>
+                      <span>987 members</span>
+                    </p>
+                  </div>
+                  <div class="group-body">
+                    <p>Connect with others on the journey to recovery from depression. Share experiences and find hope.</p>
+                  </div>
+                  <div class="group-footer">
+                    <button class="btn btn-primary btn-block">Join Group</button>
+                  </div>
+                </div>
+
+                <div class="group-card">
+                  <div class="group-header">
+                    <h3>Mindfulness Practice</h3>
+                    <p class="group-meta">
+                      <i class="fas fa-users"></i>
+                      <span>756 members</span>
+                    </p>
+                  </div>
+                  <div class="group-body">
+                    <p>Learn and practice mindfulness techniques together. Daily challenges and guided sessions.</p>
+                  </div>
+                  <div class="group-footer">
+                    <button class="btn btn-primary btn-block">Join Group</button>
+                  </div>
+                </div>
+
+                <div class="group-card">
+                  <div class="group-header">
+                    <h3>Work-Life Balance</h3>
+                    <p class="group-meta">
+                      <i class="fas fa-users"></i>
+                      <span>623 members</span>
+                    </p>
+                  </div>
+                  <div class="group-body">
+                    <p>Strategies for managing stress at work, setting boundaries, and prioritizing mental health.</p>
+                  </div>
+                  <div class="group-footer">
+                    <button class="btn btn-primary btn-block">Join Group</button>
+                  </div>
+                </div>
+
+                <div class="group-card">
+                  <div class="group-header">
+                    <h3>Grief & Loss</h3>
+                    <p class="group-meta">
+                      <i class="fas fa-users"></i>
+                      <span>512 members</span>
+                    </p>
+                  </div>
+                  <div class="group-body">
+                    <p>Support for those experiencing grief and loss. A compassionate space to share and heal together.</p>
+                  </div>
+                  <div class="group-footer">
+                    <button class="btn btn-primary btn-block">Join Group</button>
+                  </div>
+                </div>
+
+                <div class="group-card">
+                  <div class="group-header">
+                    <h3>Relationship Support</h3>
+                    <p class="group-meta">
+                      <i class="fas fa-users"></i>
+                      <span>478 members</span>
+                    </p>
+                  </div>
+                  <div class="group-body">
+                    <p>Discuss relationship challenges, communication strategies, and building healthy connections.</p>
+                  </div>
+                  <div class="group-footer">
+                    <button class="btn btn-primary btn-block">Join Group</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="discussions-tab">
+              <div class="discussions-list">
+                <div class="discussion-card">
+                  <div class="discussion-header">
+                    <div class="discussion-author">
+                      <img src="https://placehold.co/40x40" alt="User" class="author-avatar">
+                      <div>
+                        <h3>How to manage anxiety before important meetings</h3>
+                        <p>Posted by Jane D. • 2 days ago • Anxiety Support Group</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="discussion-body">
+                    <p>I've been struggling with intense anxiety before important work meetings. Does anyone have techniques that have worked for them? I've tried deep breathing but still find myself freezing up...</p>
+                  </div>
+                  <div class="discussion-footer">
+                    <div class="discussion-meta">
+                      <i class="fas fa-comment"></i>
+                      <span>24 replies</span>
+                    </div>
+                    <button class="btn btn-outline">View Discussion</button>
+                  </div>
+                </div>
+
+                <div class="discussion-card">
+                  <div class="discussion-header">
+                    <div class="discussion-author">
+                      <img src="https://placehold.co/40x40" alt="User" class="author-avatar">
+                      <div>
+                        <h3>Mindfulness techniques that actually worked for me</h3>
+                        <p>Posted by Mark T. • 5 days ago • Mindfulness Practice Group</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="discussion-body">
+                    <p>After struggling with mindfulness for years, I finally found a routine that works for me. I wanted to share my journey and the specific techniques that made a difference in my anxiety levels...</p>
+                  </div>
+                  <div class="discussion-footer">
+                    <div class="discussion-meta">
+                      <i class="fas fa-comment"></i>
+                      <span>42 replies</span>
+                    </div>
+                    <button class="btn btn-outline">View Discussion</button>
+                  </div>
+                </div>
+
+                <div class="discussion-card">
+                  <div class="discussion-header">
+                    <div class="discussion-author">
+                      <img src="https://placehold.co/40x40" alt="User" class="author-avatar">
+                      <div>
+                        <h3>How to support a partner with depression</h3>
+                        <p>Posted by Sarah R. • 1 week ago • Relationship Support Group</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="discussion-body">
+                    <p>My partner was recently diagnosed with depression, and I want to be supportive without being overbearing. I'm looking for advice from people who have been on either side of this situation...</p>
+                  </div>
+                  <div class="discussion-footer">
+                    <div class="discussion-meta">
+                      <i class="fas fa-comment"></i>
+                      <span>37 replies</span>
+                    </div>
+                    <button class="btn btn-outline">View Discussion</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="community-events-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Upcoming Community Events</h2>
+            <p>Join these virtual events to learn, connect, and grow with our community.</p>
+          </div>
+          <div class="events-grid">
+            <div class="event-card">
+              <div class="event-header">
+                <h3>Mindfulness Meditation Workshop</h3>
+                <p>Saturday, 11:00 AM</p>
+              </div>
+              <div class="event-body">
+                <p>Join Dr. Lisa Wong for a guided meditation session focused on reducing anxiety and improving focus.</p>
+              </div>
+              <div class="event-footer">
+                <button class="btn btn-primary btn-block">Register</button>
+              </div>
+            </div>
+
+            <div class="event-card">
+              <div class="event-header">
+                <h3>Stress Management Q&A</h3>
+                <p>Monday, 7:00 PM</p>
+              </div>
+              <div class="event-body">
+                <p>Dr. Robert Miller answers your questions about managing stress in daily life and during challenging times.</p>
+              </div>
+              <div class="event-footer">
+                <button class="btn btn-primary btn-block">Register</button>
+              </div>
+            </div>
+
+            <div class="event-card">
+              <div class="event-header">
+                <h3>Building Healthy Relationships</h3>
+                <p>Wednesday, 6:30 PM</p>
+              </div>
+              <div class="event-body">
+                <p>Learn effective communication strategies and boundary-setting techniques with Dr. Emily Rodriguez.</p>
+              </div>
+              <div class="event-footer">
+                <button class="btn btn-primary btn-block">Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-top">
+          <a href="index.html" class="logo">
+            <i class="fas fa-brain"></i>
+            <span>MindfulConnect</span>
+          </a>
+          <nav class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="currentYear"></span> MindfulConnect. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+  <script src="community.js"></script>
+</body>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo i {
+  margin-right: 10px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li {
+  display: inline;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.main-nav ul li a.active {
+  border-bottom: 2px solid white;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .btn {
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+}
+
+.auth-buttons .btn-outline {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  padding: 10px 0;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.community-hero-section {
+  background-color: #e0f7fa;
+  padding: 40px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-header h1 {
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  color: #666;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-container i {
+  margin-right: 5px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.community-content-section {
+  padding: 40px 0;
+}
+
+.community-tabs {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tab-btn.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.group-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.group-header {
+  margin-bottom: 10px;
+}
+
+.group-header h3 {
+  margin-bottom: 5px;
+}
+
+.group-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+}
+
+.group-body {
+  margin-bottom: 10px;
+}
+
+.group-footer {
+  text-align: center;
+}
+
+.group-footer .btn {
+  width: 100%;
+}
+
+.discussions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.discussion-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.discussion-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.discussion-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-avatar {
+  border-radius: 50%;
+}
+
+.discussion-body {
+  margin-bottom: 10px;
+}
+
+.discussion-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discussion-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+}
+
+.community-events-section {
+  padding: 40px 0;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-header {
+  margin-bottom: 10px;
+}
+
+.event-header h3 {
+  margin-bottom: 5px;
+}
+
+.event-body {
+  margin-bottom: 10px;
+}
+
+.event-footer {
+  text-align: center;
+}
+
+.event-footer .btn {
+  width: 100%;
+}
+
+.main-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mobile-menu ul li {
+    padding: 10px 0;
+  }
+
+  .mobile-menu ul li a {
+    color: #4CAF50;
+  }
+}
+</style>
+</html>

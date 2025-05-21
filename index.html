@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindfulConnect - Mental Health Consultation Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="page-container">
+    <header class="main-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-brain"></i>
+          <span>MindfulConnect</span>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <a href="login.html" class="btn btn-outline">Log In</a>
+          <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>Your Mental Wellbeing Matters</h1>
+              <p>Connect with verified psychologists for personalized support. Whether you prefer chatting or video calls, we're here to help you navigate life's challenges.</p>
+              <div class="hero-buttons">
+                <a href="signup.html?role=patient" class="btn btn-primary">
+                  I Need Support
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="signup.html?role=practitioner" class="btn btn-outline">
+                  I'm a Psychologist
+                </a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img src="https://placehold.co/750x550" alt="A therapist consulting with a patient">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="features" class="features-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>How We Support Your Journey</h2>
+            <p>Our platform offers multiple ways to connect with professional help and resources for your mental wellbeing.</p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-video"></i>
+              </div>
+              <h3>Video Consultations</h3>
+              <p>Face-to-face sessions with verified psychologists from the comfort of your home.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-comment"></i>
+              </div>
+              <h3>Chat Support</h3>
+              <p>Text-based consultations for those who prefer writing about their experiences.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Verified Professionals</h3>
+              <p>All practitioners are thoroughly vetted to ensure you receive qualified support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>How It Works</h2>
+            <p>Getting the support you need is simple and straightforward.</p>
+          </div>
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h3>Create an Account</h3>
+              <p>Sign up as a patient seeking support or as a practitioner offering services.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <h3>Find Your Match</h3>
+              <p>Browse verified psychologists and find someone who specializes in your needs.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <h3>Begin Your Journey</h3>
+              <p>Book a session and connect through video call or chat at your scheduled time.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="community" class="community-section">
+        <div class="container">
+          <div class="community-content">
+            <div class="community-text">
+              <h2>Join Our Supportive Community</h2>
+              <p>Connect with others facing similar challenges. Share experiences, offer support, and know you're not alone.</p>
+              <a href="community.html" class="btn btn-primary">
+                Explore Community
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="community-image">
+              <img src="https://placehold.co/750x550" alt="People in a support group">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="resources" class="resources-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Free Resources</h2>
+            <p>Access helpful tools and content to support your mental wellbeing journey.</p>
+          </div>
+          <div class="resources-grid">
+            <div class="resource-card">
+              <h3>Self-Help Guides</h3>
+              <p>Practical guides for managing anxiety, stress, depression, and more.</p>
+              <a href="resources.html#guides" class="btn btn-outline btn-block">View Guides</a>
+            </div>
+            <div class="resource-card">
+              <h3>Video Lectures</h3>
+              <p>Educational content from mental health experts on various topics.</p>
+              <a href="resources.html#videos" class="btn btn-outline btn-block">Watch Videos</a>
+            </div>
+            <div class="resource-card">
+              <h3>AI Self-Assessment</h3>
+              <p>Quick tools to help you understand your current mental wellbeing.</p>
+              <a href="resources.html#assessment" class="btn btn-outline btn-block">Take Assessment</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Ready to Begin Your Journey?</h2>
+            <p>Take the first step toward better mental wellbeing today.</p>
+            <div class="cta-buttons">
+              <a href="signup.html?role=patient" class="btn btn-secondary">Sign Up as Patient</a>
+              <a href="signup.html?role=practitioner" class="btn btn-outline-light">Join as Psychologist</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>What Our Users Say</h2>
+            <p>Hear from people who have found support through our platform.</p>
+          </div>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"Finding MindfulConnect was a turning point in my journey with anxiety. The support I've received has been life-changing."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://placehold.co/60x60" alt="User" class="testimonial-avatar">
+                <div class="testimonial-info">
+                  <h4>Sarah M.</h4>
+                  <p>Patient</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"As a psychologist, this platform has allowed me to connect with patients who might otherwise not have access to mental health support."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://placehold.co/60x60" alt="User" class="testimonial-avatar">
+                <div class="testimonial-info">
+                  <h4>Dr. James W.</h4>
+                  <p>Practitioner</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>"The community groups have given me a sense of belonging and understanding that I couldn't find elsewhere."</p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://placehold.co/60x60" alt="User" class="testimonial-avatar">
+                <div class="testimonial-info">
+                  <h4>Michael T.</h4>
+                  <p>Patient</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-top">
+          <a href="index.html" class="logo">
+            <i class="fas fa-brain"></i>
+            <span>MindfulConnect</span>
+          </a>
+          <nav class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="currentYear"></span> MindfulConnect. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo i {
+  margin-right: 10px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.auth-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-form .form-group {
+  margin-bottom: 15px;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+.radio-option input {
+  margin-right: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.auth-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.auth-links a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.auth-footer {
+  background-color: #f4f4f4;
+  padding: 10px 0;
+}
+
+.auth-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.back-link i {
+  margin-right: 5px;
+}
+
+.hero-section {
+  background-color: #4CAF50;
+  color: white;
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.features-section,
+.how-it-works-section,
+.community-section,
+.resources-section,
+.cta-section,
+.testimonials-section {
+  padding: 60px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.features-grid,
+.steps-grid,
+.resources-grid,
+.testimonials-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.features-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.steps-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.resources-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.testimonials-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.feature-card,
+.step-card,
+.resource-card,
+.testimonial-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-icon,
+.step-number {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.testimonial-avatar {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cta-section {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.main-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+    background-color: #4CAF50;
+    padding: 20px;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+}
+</style>
+</html>

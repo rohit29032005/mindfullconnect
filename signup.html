@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - MindfulConnect</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="page-container">
+    <header class="main-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-brain"></i>
+          <span>MindfulConnect</span>
+        </a>
+      </div>
+    </header>
+    <main class="auth-main">
+      <div class="auth-container">
+        <div class="auth-card">
+          <div class="auth-header">
+            <h1>Create an account</h1>
+            <p>Join MindfulConnect to begin your mental wellbeing journey.</p>
+          </div>
+          <form id="signupForm" class="auth-form">
+            <div class="form-group">
+              <label for="role">I am a:</label>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input type="radio" id="patient" name="role" value="patient" checked>
+                  <label for="patient">Patient</label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" id="practitioner" name="role" value="practitioner">
+                  <label for="practitioner">Psychologist</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+            <div class="auth-links">
+              Already have an account? <a href="login.html">Log in</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="auth-footer">
+      <div class="container">
+        <div class="auth-footer-content">
+          <a href="index.html" class="back-link">
+            <i class="fas fa-chevron-left"></i>
+            Back to home
+          </a>
+          <p>&copy; <span id="currentYear"></span> MindfulConnect</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Add Firebase SDK scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+
+  <!-- Firebase configuration -->
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAlqXq6cxrYWWu7TMXh6K_ccZ02MOi_rbI",
+      authDomain: "mindconnect-49fc4.firebaseapp.com",
+      projectId: "mindconnect-49fc4",
+      storageBucket: "mindconnect-49fc4.firebasestorage.app",
+      messagingSenderId: "813965263456",
+      appId: "1:813965263456:web:e1342a94933d41266af905"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- Custom scripts -->
+  <script src="scripts.js"></script>
+  <script src="auth.js"></script>
+</body>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo i {
+  margin-right: 10px;
+}
+
+.auth-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-form .form-group {
+  margin-bottom: 15px;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+.radio-option input {
+  margin-right: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.auth-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.auth-links a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.auth-footer {
+  background-color: #f4f4f4;
+  padding: 10px 0;
+}
+
+.auth-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+.back-link i {
+  margin-right: 5px;
+}
+</style>
+</html>
